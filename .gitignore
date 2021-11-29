@@ -1,0 +1,14 @@
+# execution artefacts
+*.swp
+*.pyc
+.coverage*
+.travis*
+
+# dist artefacts
+build/
+dist/
+statuscake_api.egg-info/
+*.egg
+
+# documentation artefacts
+docs/_build
