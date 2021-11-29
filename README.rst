@@ -132,8 +132,7 @@ variables so that the same code may run seamlessly in multiple environments.
 Production and development for instance.
 
 This wrapper will first look for direct instantiation parameters then
-``STATUSCAKE_ENDPOINT``, ``STATUSCAKE_APPLICATION_KEY``, ``STATUSCAKE_APPLICATION_SECRET`` and
-``STATUSCAKE_CONSUMER_KEY`` environment variables. If either of these parameter is not
+``STATUSCAKE_ENDPOINT``, ``STATUSCAKE_API_KEY`` environment variables. If either of these parameter is not
 provided, it will look for a configuration file of the form:
 
 .. code:: ini
@@ -144,9 +143,7 @@ provided, it will look for a configuration file of the form:
 
     [statuscake-eu]
     ; configuration specific to 'statuscake-eu' endpoint
-    application_key=my_app_key
-    application_secret=my_application_secret
-    consumer_key=my_consumer_key
+    api_key=my_api_key
 
 The client will successively attempt to locate this configuration file in
 
