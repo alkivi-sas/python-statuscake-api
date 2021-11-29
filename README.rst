@@ -59,8 +59,6 @@ it looks like:
 
 Depending on the API you want to use, you may set the several ``endpoint`` to handle severals accounts
 
-See Configuration_ for more information on available configuration mechanisms.
-
 .. note:: When using a versioning system, make sure to add ``statuscake.conf`` to ignored
           files. It contains confidential/security-sensitive information!
 
@@ -123,8 +121,7 @@ When array in parameters, you need to add [] for the parameter
          'contact_groups_csv': '31173',
          'regions[]': ['paris', 'london'],
      }
-     test = client.post('/uptime', **new_test)
-
+    test = client.post('/uptime', **new_test)
 
 
 Environment vars and predefined configuration files

@@ -3,6 +3,7 @@
 *.pyc
 .coverage*
 .travis*
+.vscode*
 
 # dist artefacts
 build/
